@@ -1,0 +1,598 @@
+{
+    "contractName": "Message",
+    "abi": [
+        {
+            "inputs": [],
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+        },
+        {
+            "inputs": [],
+            "name": "getTotalMessages",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "message",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.8.11+commit.d7f03943\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"getTotalMessages\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"message\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"d:/Development/Portfolio Projects/desocial/contracts/Message.sol\":\"Message\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"d:/Development/Portfolio Projects/desocial/contracts/Message.sol\":{\"keccak256\":\"0x13d8ef8d3c997d31fb23864c100166a39f3d79172a7d0bc440a2ff777a06b877\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://ad80b8656de4eae872987feb6ab82a8e6e228e2a745ad4cd5a58ec496a3e8393\",\"dweb:/ipfs/QmQVSYVmz3v4sexHjGa5e72EN3fuFUBkkTY2nAs8sfckaq\"]},\"d:/Development/Portfolio Projects/desocial/node_modules/hardhat/console.sol\":{\"keccak256\":\"0x72b6a1d297cd3b033d7c2e4a7e7864934bb767db6453623f1c3082c6534547f4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a8cb8681076e765c214e0d51cac989325f6b98e315eaae06ee0cbd5a9f084763\",\"dweb:/ipfs/QmNWGHi4zmjxQTYN3NMGnJd49jBT5dE4bxTdWEaDuJrC6N\"]}},\"version\":1}",
+    "bytecode": "608060405234801561001057600080fd5b506100596040518060400160405280601581526020017f49276d206120536d61727420436f6e747261637421000000000000000000000081525061005e60201b6100f31760201c565b61011e565b6100a58160405160240161007291906100c9565b60408051601f198184030181529190526020810180516001600160e01b0390811663104c13eb60e21b179091526100a816565b50565b80516a636f6e736f6c652e6c6f67602083016000808483855afa5050505050565b600060208083528351808285015260005b818110156100f6578581018301518582016040015282016100da565b81811115610108576000604083870101525b50601f01601f1916929092016040019392505050565b6102f38061012d6000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c8063147e91081461003b578063e21f37ce14610055575b600080fd5b61004361005f565b60405190815260200160405180910390f35b61005d6100a9565b005b60006100a26040518060400160405280601781526020017f5765206861766520256420746f74616c20776176657321000000000000000000815250600054610139565b5060005490565b60016000808282546100bb91906101e4565b909155505060408051808201909152601081526f257320686173206d657373616765642160801b60208201526100f19033610182565b565b610136816040516024016101079190610257565b60408051601f198184030181529190526020810180516001600160e01b031663104c13eb60e21b1790526101c3565b50565b61017e828260405160240161014f929190610271565b60408051601f198184030181529190526020810180516001600160e01b03166309710a9d60e41b1790526101c3565b5050565b61017e8282604051602401610198929190610293565b60408051601f198184030181529190526020810180516001600160e01b031663319af33360e01b1790525b80516a636f6e736f6c652e6c6f67602083016000808483855afa5050505050565b6000821982111561020557634e487b7160e01b600052601160045260246000fd5b500190565b6000815180845260005b8181101561023057602081850181015186830182015201610214565b81811115610242576000602083870101525b50601f01601f19169290920160200192915050565b60208152600061026a602083018461020a565b9392505050565b604081526000610284604083018561020a565b90508260208301529392505050565b6040815260006102a6604083018561020a565b905060018060a01b0383166020830152939250505056fea2646970667358221220abc8706575d19187b424581ed5f54bf785ee923332f3f67e0658989d57174ed264736f6c634300080b0033",
+    "deployedBytecode": "608060405234801561001057600080fd5b50600436106100365760003560e01c8063147e91081461003b578063e21f37ce14610055575b600080fd5b61004361005f565b60405190815260200160405180910390f35b61005d6100a9565b005b60006100a26040518060400160405280601781526020017f5765206861766520256420746f74616c20776176657321000000000000000000815250600054610139565b5060005490565b60016000808282546100bb91906101e4565b909155505060408051808201909152601081526f257320686173206d657373616765642160801b60208201526100f19033610182565b565b610136816040516024016101079190610257565b60408051601f198184030181529190526020810180516001600160e01b031663104c13eb60e21b1790526101c3565b50565b61017e828260405160240161014f929190610271565b60408051601f198184030181529190526020810180516001600160e01b03166309710a9d60e41b1790526101c3565b5050565b61017e8282604051602401610198929190610293565b60408051601f198184030181529190526020810180516001600160e01b031663319af33360e01b1790525b80516a636f6e736f6c652e6c6f67602083016000808483855afa5050505050565b6000821982111561020557634e487b7160e01b600052601160045260246000fd5b500190565b6000815180845260005b8181101561023057602081850181015186830182015201610214565b81811115610242576000602083870101525b50601f01601f19169290920160200192915050565b60208152600061026a602083018461020a565b9392505050565b604081526000610284604083018561020a565b90508260208301529392505050565b6040815260006102a6604083018561020a565b905060018060a01b0383166020830152939250505056fea2646970667358221220abc8706575d19187b424581ed5f54bf785ee923332f3f67e0658989d57174ed264736f6c634300080b0033",
+    "sourceMap": "149:404:0:-:0;;;200:67;;;;;;;;;;224:36;;;;;;;;;;;;;;;;;;:11;;;;;:36;;:::i;:::-;149:404;;5054:112:1;5103:59;5158:2;5119:42;;;;;;;;:::i;:::-;;;;-1:-1:-1;;5119:42:1;;;;;;;;;;;;;;-1:-1:-1;;;;;5119:42:1;;;-1:-1:-1;;;5119:42:1;;;;5103:15;:59;:::i;:::-;5054:112;:::o;176:288::-;264:14;;129:42;373:2;360:16;;240:21;;264:14;360:16;129:42;400:5;389:68;380:77;;335:126;;176:288;:::o;14:597:2:-;126:4;155:2;184;173:9;166:21;216:6;210:13;259:6;254:2;243:9;239:18;232:34;284:1;294:140;308:6;305:1;302:13;294:140;;;403:14;;;399:23;;393:30;369:17;;;388:2;365:26;358:66;323:10;;294:140;;;452:6;449:1;446:13;443:91;;;522:1;517:2;508:6;497:9;493:22;489:31;482:42;443:91;-1:-1:-1;595:2:2;574:15;-1:-1:-1;;570:29:2;555:45;;;;602:2;551:54;;14:597;-1:-1:-1;;;14:597:2:o;:::-;149:404:0;;;;;;",
+    "deployedSourceMap": "149:404:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;393:158;;;:::i;:::-;;;160:25:2;;;148:2;133:18;393:158:0;;;;;;;273:114;;;:::i;:::-;;393:158;442:7;461:53;;;;;;;;;;;;;;;;;;500:13;;461:11;:53::i;:::-;-1:-1:-1;531:13:0;;;393:158::o;273:114::-;326:1;309:13;;:18;;;;;;;:::i;:::-;;;;-1:-1:-1;;337:43:0;;;;;;;;;;;;-1:-1:-1;;;337:43:0;;;;;;369:10;337:11;:43::i;:::-;273:114::o;5054:112:1:-;5103:59;5158:2;5119:42;;;;;;;;:::i;:::-;;;;-1:-1:-1;;5119:42:1;;;;;;;;;;;;;;-1:-1:-1;;;;;5119:42:1;-1:-1:-1;;;5119:42:1;;;5103:15;:59::i;:::-;5054:112;:::o;5888:130::-;5946:68;6006:2;6010;5962:51;;;;;;;;;:::i;:::-;;;;-1:-1:-1;;5962:51:1;;;;;;;;;;;;;;-1:-1:-1;;;;;5962:51:1;-1:-1:-1;;;5962:51:1;;;5946:15;:68::i;:::-;5888:130;;:::o;6298:136::-;6359:71;6422:2;6426;6375:54;;;;;;;;;:::i;:::-;;;;-1:-1:-1;;6375:54:1;;;;;;;;;;;;;;-1:-1:-1;;;;;6375:54:1;-1:-1:-1;;;6375:54:1;;;176:288;264:14;;129:42;373:2;360:16;;240:21;;264:14;360:16;129:42;400:5;389:68;380:77;;335:126;;176:288;:::o;196:225:2:-;236:3;267:1;263:6;260:1;257:13;254:136;;;312:10;307:3;303:20;300:1;293:31;347:4;344:1;337:15;375:4;372:1;365:15;254:136;-1:-1:-1;406:9:2;;196:225::o;426:472::-;468:3;506:5;500:12;533:6;528:3;521:19;558:1;568:162;582:6;579:1;576:13;568:162;;;644:4;700:13;;;696:22;;690:29;672:11;;;668:20;;661:59;597:12;568:162;;;748:6;745:1;742:13;739:87;;;814:1;807:4;798:6;793:3;789:16;785:27;778:38;739:87;-1:-1:-1;880:2:2;859:15;-1:-1:-1;;855:29:2;846:39;;;;887:4;842:50;;426:472;-1:-1:-1;;426:472:2:o;903:220::-;1052:2;1041:9;1034:21;1015:4;1072:45;1113:2;1102:9;1098:18;1090:6;1072:45;:::i;:::-;1064:53;903:220;-1:-1:-1;;;903:220:2:o;1128:291::-;1305:2;1294:9;1287:21;1268:4;1325:45;1366:2;1355:9;1351:18;1343:6;1325:45;:::i;:::-;1317:53;;1406:6;1401:2;1390:9;1386:18;1379:34;1128:291;;;;;:::o;1424:317::-;1601:2;1590:9;1583:21;1564:4;1621:45;1662:2;1651:9;1647:18;1639:6;1621:45;:::i;:::-;1613:53;;1731:1;1727;1722:3;1718:11;1714:19;1706:6;1702:32;1697:2;1686:9;1682:18;1675:60;1424:317;;;;;:::o",
+    "sourcePath": "d:/Development/Portfolio Projects/desocial/contracts/Message.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.8.11+commit.d7f03943"
+    },
+    "ast": {
+        "absolutePath": "d:/Development/Portfolio Projects/desocial/contracts/Message.sol",
+        "exportedSymbols": {
+            "Message": [
+                46
+            ],
+            "console": [
+                8110
+            ]
+        },
+        "id": 47,
+        "license": "Unlicense",
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 1,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.8",
+                    ".0"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "37:23:0"
+            },
+            {
+                "absolutePath": "d:/Development/Portfolio Projects/desocial/node_modules/hardhat/console.sol",
+                "file": "d:/Development/Portfolio Projects/desocial/node_modules/hardhat/console.sol",
+                "id": 2,
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "ImportDirective",
+                "scope": 47,
+                "sourceUnit": 8111,
+                "src": "62:85:0",
+                "symbolAliases": [],
+                "unitAlias": ""
+            },
+            {
+                "abstract": false,
+                "baseContracts": [],
+                "canonicalName": "Message",
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 46,
+                "linearizedBaseContracts": [
+                    46
+                ],
+                "name": "Message",
+                "nameLocation": "158:7:0",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "constant": false,
+                        "id": 4,
+                        "mutability": "mutable",
+                        "name": "totalMessages",
+                        "nameLocation": "180:13:0",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 46,
+                        "src": "172:21:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                        },
+                        "typeName": {
+                            "id": 3,
+                            "name": "uint256",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "172:7:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                            }
+                        },
+                        "visibility": "internal"
+                    },
+                    {
+                        "body": {
+                            "id": 13,
+                            "nodeType": "Block",
+                            "src": "214:53:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "arguments": [
+                                            {
+                                                "hexValue": "49276d206120536d61727420436f6e747261637421",
+                                                "id": 10,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "kind": "string",
+                                                "lValueRequested": false,
+                                                "nodeType": "Literal",
+                                                "src": "236:23:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_stringliteral_bc4699afa8bdaa02c8e2e6234459c046f1d425647156ebf1d5b427f3d4d6af61",
+                                                    "typeString": "literal_string \"I'm a Smart Contract!\""
+                                                },
+                                                "value": "I'm a Smart Contract!"
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_stringliteral_bc4699afa8bdaa02c8e2e6234459c046f1d425647156ebf1d5b427f3d4d6af61",
+                                                    "typeString": "literal_string \"I'm a Smart Contract!\""
+                                                }
+                                            ],
+                                            "expression": {
+                                                "id": 7,
+                                                "name": "console",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 8110,
+                                                "src": "224:7:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_type$_t_contract$_console_$8110_$",
+                                                    "typeString": "type(library console)"
+                                                }
+                                            },
+                                            "id": 9,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "memberName": "log",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": 641,
+                                            "src": "224:11:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_internal_view$_t_string_memory_ptr_$returns$__$",
+                                                "typeString": "function (string memory) view"
+                                            }
+                                        },
+                                        "id": 11,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "224:36:0",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 12,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "224:36:0"
+                                }
+                            ]
+                        },
+                        "id": 14,
+                        "implemented": true,
+                        "kind": "constructor",
+                        "modifiers": [],
+                        "name": "",
+                        "nameLocation": "-1:-1:-1",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 5,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "211:2:0"
+                        },
+                        "returnParameters": {
+                            "id": 6,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "214:0:0"
+                        },
+                        "scope": 46,
+                        "src": "200:67:0",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 29,
+                            "nodeType": "Block",
+                            "src": "299:88:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 19,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "id": 17,
+                                            "name": "totalMessages",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 4,
+                                            "src": "309:13:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "+=",
+                                        "rightHandSide": {
+                                            "hexValue": "31",
+                                            "id": 18,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": true,
+                                            "kind": "number",
+                                            "lValueRequested": false,
+                                            "nodeType": "Literal",
+                                            "src": "326:1:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_rational_1_by_1",
+                                                "typeString": "int_const 1"
+                                            },
+                                            "value": "1"
+                                        },
+                                        "src": "309:18:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "id": 20,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "309:18:0"
+                                },
+                                {
+                                    "expression": {
+                                        "arguments": [
+                                            {
+                                                "hexValue": "257320686173206d6573736167656421",
+                                                "id": 24,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "kind": "string",
+                                                "lValueRequested": false,
+                                                "nodeType": "Literal",
+                                                "src": "349:18:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_stringliteral_4fa12c0b4578f3440787c7fa55da4dea89f7104297c7c865e4235ac9135e8670",
+                                                    "typeString": "literal_string \"%s has messaged!\""
+                                                },
+                                                "value": "%s has messaged!"
+                                            },
+                                            {
+                                                "expression": {
+                                                    "id": 25,
+                                                    "name": "msg",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 4294967281,
+                                                    "src": "369:3:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_magic_message",
+                                                        "typeString": "msg"
+                                                    }
+                                                },
+                                                "id": 26,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "memberName": "sender",
+                                                "nodeType": "MemberAccess",
+                                                "src": "369:10:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_stringliteral_4fa12c0b4578f3440787c7fa55da4dea89f7104297c7c865e4235ac9135e8670",
+                                                    "typeString": "literal_string \"%s has messaged!\""
+                                                },
+                                                {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                }
+                                            ],
+                                            "expression": {
+                                                "id": 21,
+                                                "name": "console",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 8110,
+                                                "src": "337:7:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_type$_t_contract$_console_$8110_$",
+                                                    "typeString": "type(library console)"
+                                                }
+                                            },
+                                            "id": 23,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "memberName": "log",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": 805,
+                                            "src": "337:11:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_internal_view$_t_string_memory_ptr_$_t_address_$returns$__$",
+                                                "typeString": "function (string memory,address) view"
+                                            }
+                                        },
+                                        "id": 27,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "337:43:0",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 28,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "337:43:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "e21f37ce",
+                        "id": 30,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "message",
+                        "nameLocation": "282:7:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 15,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "289:2:0"
+                        },
+                        "returnParameters": {
+                            "id": 16,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "299:0:0"
+                        },
+                        "scope": 46,
+                        "src": "273:114:0",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 44,
+                            "nodeType": "Block",
+                            "src": "451:100:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "arguments": [
+                                            {
+                                                "hexValue": "5765206861766520256420746f74616c20776176657321",
+                                                "id": 38,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "kind": "string",
+                                                "lValueRequested": false,
+                                                "nodeType": "Literal",
+                                                "src": "473:25:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_stringliteral_863ad3ce73bc5de36878d11a5464e7b17b05dede85c460be1aa71aebd4b304e3",
+                                                    "typeString": "literal_string \"We have %d total waves!\""
+                                                },
+                                                "value": "We have %d total waves!"
+                                            },
+                                            {
+                                                "id": 39,
+                                                "name": "totalMessages",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 4,
+                                                "src": "500:13:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_stringliteral_863ad3ce73bc5de36878d11a5464e7b17b05dede85c460be1aa71aebd4b304e3",
+                                                    "typeString": "literal_string \"We have %d total waves!\""
+                                                },
+                                                {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            ],
+                                            "expression": {
+                                                "id": 35,
+                                                "name": "console",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 8110,
+                                                "src": "461:7:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_type$_t_contract$_console_$8110_$",
+                                                    "typeString": "type(library console)"
+                                                }
+                                            },
+                                            "id": 37,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "memberName": "log",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": 754,
+                                            "src": "461:11:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_internal_view$_t_string_memory_ptr_$_t_uint256_$returns$__$",
+                                                "typeString": "function (string memory,uint256) view"
+                                            }
+                                        },
+                                        "id": 40,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "461:53:0",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 41,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "461:53:0"
+                                },
+                                {
+                                    "expression": {
+                                        "id": 42,
+                                        "name": "totalMessages",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 4,
+                                        "src": "531:13:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "functionReturnParameters": 34,
+                                    "id": 43,
+                                    "nodeType": "Return",
+                                    "src": "524:20:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "147e9108",
+                        "id": 45,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "getTotalMessages",
+                        "nameLocation": "402:16:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 31,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "418:2:0"
+                        },
+                        "returnParameters": {
+                            "id": 34,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 33,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nameLocation": "-1:-1:-1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 45,
+                                    "src": "442:7:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 32,
+                                        "name": "uint256",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "442:7:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "441:9:0"
+                        },
+                        "scope": 46,
+                        "src": "393:158:0",
+                        "stateMutability": "view",
+                        "virtual": false,
+                        "visibility": "public"
+                    }
+                ],
+                "scope": 47,
+                "src": "149:404:0",
+                "usedErrors": []
+            }
+        ],
+        "src": "37:517:0"
+    },
+    "functionHashes": {
+        "getTotalMessages()": "147e9108",
+        "message()": "e21f37ce"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "151000",
+            "executionCost": "infinite",
+            "totalCost": "infinite"
+        },
+        "external": {
+            "getTotalMessages()": "infinite",
+            "message()": "infinite"
+        }
+    }
+}
