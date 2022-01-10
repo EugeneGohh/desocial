@@ -8,7 +8,7 @@ function Header() {
   const { address, chainId, provider } = useWeb3();
   const [allMessages, setAllMessages] = useState([]);
   const [text, setText] = useState("");
-  const contractAddress = "0x0fa60f0041BDA25D9DD4fF51f1575FB2c92f9958";
+  const contractAddress = "0x5421fD0486551694a63E1B42E4667de171B701CA";
   const contractABI = abi.abi;
 
   // Listen for events
