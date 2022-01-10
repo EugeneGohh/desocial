@@ -48,8 +48,12 @@ function Header() {
 
   if (!address) {
     return (
-      <div>
-        <h1>Welcome to DeSocial. Please connect your Matemask wallet!</h1>
+      <div className="flex flex-col">
+        <h1 className="font-mono subpixel-antialiased font-semibold">
+          Welcome to DeSocial. Please connect your Matemask wallet!
+        </h1>
+
+        <br />
         <Connect />
       </div>
     );
@@ -139,33 +143,69 @@ function Header() {
   };
 
   return (
-    <div>
-      <div>👋 Hey there!</div>
+    <>
+      <div className="flex flex-col">
+        <div className="subpixel-antialiased font-semibold text-center mb-2">
+          👋 Hey there!
+        </div>
 
-      <div>
-        <form onSubmit={handleSubmit}>
-          <label>
-            Drop your message here:
-            <input type="text" value={text} onChange={handleChange} />
-          </label>
-          <input type="submit" value="Submit" onClick={message} />
-        </form>
+        <div className="my-5 form-control">
+          <form onSubmit={handleSubmit}>
+            <label className="label">
+              <span className="label-text">Drop your message here:</span>
+            </label>
+
+            <div className="flex space-x-1">
+              <input
+                type="text"
+                placeholder="Search"
+                className="w-full input input-primary input-bordered"
+                value={text}
+                onChange={handleChange}
+              />
+              <button
+                type="submit"
+                value="Submit"
+                onClick={message}
+                className="btn btn-primary"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div>
+          <button
+            onClick={getAllMessages}
+            className="btn btn-secondary btn-md btn-active"
+            role="button"
+            aria-pressed="true"
+          >
+            Get all messages
+          </button>
+        </div>
       </div>
 
-      <div>
-        <button onClick={getAllMessages}>Get all messages</button>
-      </div>
+      <div className="divider" />
 
-      {allMessages.map((message, index) => {
-        return (
-          <div key={index}>
-            <div>Address: {message.address}</div>
-            <div>Time: {message.timestamp.toString()}</div>
-            <div>Message: {message.message}</div>
-          </div>
-        );
-      })}
-    </div>
+      <div className="grid grid-cols-4 gap-4">
+        {allMessages.map((message, index) => {
+          return (
+            <div
+              key={index}
+              className="card w-72 card-bordered card-compact lg:card-normal shadow-lg m-5"
+            >
+              <div className="card-body">
+                <div className="card-title">Address: {message.address}</div>
+                <p>Time: {message.timestamp.toString()}</p>
+                <p>Message: {message.message}</p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </>
   );
 }
 
