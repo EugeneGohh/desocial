@@ -4,7 +4,7 @@ import { ThirdwebProvider } from "@3rdweb/react";
 
 function MyApp({ Component, pageProps }) {
   // Ethereum chain ID
-  const supportedChainIds = [4];
+  const supportedChainIds = [5];
 
   // Support only Matemask
   const connectors = {
